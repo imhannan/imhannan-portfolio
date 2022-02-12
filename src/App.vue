@@ -11,9 +11,7 @@ import TheMain from "./components/TheMain.vue";
     <the-header />
   </header>
 
-  <main
-    class="mb-4 flex flex-col space-y-4 sm:mb-8 sm:space-y-8 md:mb-12 md:space-y-12 lg:mb-16 lg:space-y-16"
-  >
+  <main class="col-spacing mb-4 flex flex-col sm:mb-8 md:mb-12 lg:mb-16">
     <the-main />
   </main>
   <footer class="container-helper container">

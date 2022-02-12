@@ -1,6 +1,6 @@
 <template>
   <div
-    class="container-helper container flex space-x-2 sm:space-x-4 md:space-x-6 lg:space-x-8"
+    class="container-helper container flex flex-col space-y-2 sm:space-y-4 md:flex-row md:space-x-6 md:space-y-0 lg:space-x-8"
   >
     <h1
       class="text-xl font-medium text-indigo-700 sm:text-2xl md:text-3xl lg:text-4xl"

@@ -48,6 +48,10 @@ body {
     @apply relative after:absolute after:-right-20 after:bottom-48 after:-z-10 after:h-64 after:w-64 after:rounded-full after:bg-indigo-500 sm:after:h-[24rem] sm:after:w-[24rem] md:after:-right-24 md:after:-bottom-24 md:after:h-[32rem] md:after:w-[32rem] lg:after:h-[36rem] lg:after:w-[36rem];
   }
 
+  .col-spacing {
+    @apply space-y-8 sm:space-y-12 md:space-y-16 lg:space-y-20;
+  }
+
   .hero-buble {
     @apply before:buble-animation relative before:absolute before:h-32 before:w-32 before:rounded-full before:bg-indigo-500/[0.5] sm:before:h-36 sm:before:w-36 md:before:h-48 md:before:w-48;
   }

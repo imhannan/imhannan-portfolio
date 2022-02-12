@@ -1,12 +1,12 @@
 <template>
   <div
-    class="container-helper container flex flex-col space-y-4 text-indigo-500 sm:space-y-8 md:flex-row md:items-center md:justify-center md:space-y-0 md:space-x-12 lg:space-x-16"
+    class="container-helper container flex items-center justify-center space-x-4 text-indigo-500 sm:space-x-8 md:space-x-12 lg:space-x-16"
   >
     <img
       src="/images/client/client.png"
       alt="client"
       title="client"
-      class="border-2 border-gray-200 drop-shadow-lg md:border-4 md:drop-shadow-2xl"
+      class="h-64 w-48 border-2 border-gray-200 drop-shadow-lg sm:h-72 sm:w-52 md:h-80 md:w-56 md:border-4 md:drop-shadow-2xl lg:h-96 lg:w-64"
     />
     <section
       class="flex flex-col space-y-2 sm:space-y-4 md:space-y-6 lg:space-y-8"

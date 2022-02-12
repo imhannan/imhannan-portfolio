@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply box-border;
+}
+
+html {
+  @apply scrollbar scroll-smooth;
+}
+
+body {
+  @apply m-0 p-0 selection:bg-indigo-500 selection:text-white;
+}
+
+@layer utilities {
+  /* Scroll thumb styles */
+  .scrollbar::-webkit-scrollbar {
+    @apply w-2 duration-300 md:w-4;
+  }
+  .scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-indigo-500;
+  }
+  .scrollbar::-webkit-scrollbar-thumb:active {
+    @apply bg-indigo-700;
+  }
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    @apply bg-indigo-600 shadow-md md:shadow-lg;
+  }
+
+  /* Scroll track styles (Background) */
+  .scrollbar::-webkit-scrollbar-track {
+    @apply bg-gray-200;
+  }
+  .scrollbar::-webkit-scrollbar-track:hover,
+  .scrollbar::-webkit-scrollbar-track:active {
+    @apply bg-gray-300;
+  }
+}
+
+@layer components {
+  .container-helper {
+    @apply mx-auto px-2 sm:px-4 md:px-6 lg:px-8;
+  }
+
+  .hero-image {
+    @apply relative after:absolute after:-right-20 after:bottom-48 after:-z-10 after:h-64 after:w-64 after:rounded-full after:bg-indigo-500 sm:after:h-[24rem] sm:after:w-[24rem] md:after:-right-24 md:after:-bottom-24 md:after:h-[32rem] md:after:w-[32rem] lg:after:h-[36rem] lg:after:w-[36rem];
+  }
+
+  .hero-buble {
+    @apply before:buble-animation relative before:absolute before:h-32 before:w-32 before:rounded-full before:bg-indigo-500/[0.5] sm:before:h-36 sm:before:w-36 md:before:h-48 md:before:w-48;
+  }
+
+  .buble-animation {
+    animation: buble-animation 3s ease-in-out infinite;
+  }
+
+  @keyframes buble-animation {
+    0% {
+      top: 50%;
+      bottom: 50%;
+      left: 0;
+      right: 100%;
+    }
+    25% {
+      top: 100%;
+      bottom: 0;
+      left: 50%;
+      right: 50%;
+    }
+    50% {
+      left: 100%;
+      bottom: 50%;
+      right: 0;
+      top: 50%;
+    }
+    75% {
+      top: 0;
+      bottom: 100%;
+      right: 50%;
+      left: 50%;
+    }
+    100% {
+      top: 50%;
+      bottom: 50%;
+      left: 0;
+      right: 100%;
+    }
+  }
+}

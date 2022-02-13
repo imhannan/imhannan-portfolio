@@ -1,6 +1,6 @@
-# imhannan
+# imhannan.netlify.app project
 
-This template should help get you started developing with Vue 3 in Vite.
+Live version of this app can be found [here](https://imhannan.netlify.app)
 
 ## Recommended IDE Setup
 
@@ -10,7 +10,7 @@ This template should help get you started developing with Vue 3 in Vite.
 
 See [Vite Configuration Reference](https://vitejs.dev/config/).
 
-## Project Setup
+## Project Setup (Just clone this repo and run)
 
 ```sh
 npm install
